@@ -1,2 +1,17 @@
-// Fonts
-$base-font: "Roboto", Helvetica, Arial, sans-serif
+@mixin placeholder
+  &::-webkit-input-placeholder 
+  	@content
+  &:-moz-placeholder           
+  	@content
+  &::-moz-placeholder         
+  	@content
+  &:-ms-input-placeholder      
+  	@content 
+
+$base-font: 'Roboto', sans-serif
+$title-font: 'Roboto Condensed', sans-serif
+
+$dark: #262628
+$medium: #4C6269
+$red: #880000
+$white: #fff

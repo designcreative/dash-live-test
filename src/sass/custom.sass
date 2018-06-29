@@ -1,2 +1,471 @@
 @import "inc/variables"
-@import "inc/reset"
+@import "inc/responsive"
+
+body
+  font-size: 1rem
+  font-family: $base-font
+  margin: 0
+  padding: 0
+  font-smooth: auto
+  +v-xs
+    overflow-x: hidden
+.desc
+  padding: 5vh 0 7vh
+  font-size: .9rem
+  font-weight: 200
+  line-height: 1.75
+  &.desc-white
+    color: $white
+  &.desc-dark    
+    color: $dark
+    +v-lg
+      padding: 5vh 0 5vh
+    +v-md
+      padding-top: 5vh
+      padding-bottom: 5vh
+    +v-sm
+      color: $white
+    +v-xs
+      width: 80%
+      color: $dark
+.block
+  display: block
+  height: 286px
+  border-radius: 2px
+  box-shadow: 0 3px 6px rgba(0,0,0,.1)
+  overflow: hidden
+  +v-sm
+    height: auto
+  .block-title
+    margin: 30px 0 0 15px
+    font-family: $title-font
+    font-weight: 700
+  figure
+    display: block
+    width: 100%
+    height: 150px
+    line-height: 0
+    img
+      display: block
+      margin: auto
+    .sub-title
+      position: relative      
+      margin: 0 0 -15px 15px
+      height: 30px      
+      padding: 0 6px
+      color: $white
+      text-transform: uppercase
+      text-decoration: none  
+      background: $medium
+      z-index: 1
+      a
+        font-size: 1.5rem
+        font-weight: 700
+        font-family: $title-font
+        font-style: normal    
+      &.red
+        background: $red
+      &.dark
+        background: $medium
+  &.block-wide
+    width: 48%
+    margin: 0 auto 4vh
+    +v-sm
+      width: 47%
+    .block-title
+      width: 80%
+      +v-sm
+        width: 70%
+      a
+        font-size: 2.05rem
+        font-style: italic
+        line-height: 1
+        +v-xs
+          font-size: 0.85rem
+          font-weight: 200
+          font-style: normal
+          line-height: 1
+  &.block-mini
+    width: 20%
+    .news
+      .block-meta
+        .name
+          display: inline-block
+          +v-sm
+            display: none
+        .category
+          +v-sm
+            display: inline-block
+            width: 25%
+            margin-top: -10px
+    .block-title
+      width: 90%
+      +v-sm
+        width: 70%
+        max-height: 100px
+        overflow: hidden
+      a
+        font-size: 0.85rem
+        font-weight: 200
+        font-style: normal
+        line-height: 1
+        +v-sm          
+          font-size: 2.05rem
+          font-family: $title-font
+          font-weight: 700
+          font-style: italic
+          line-height: 1
+        +v-xs
+          font-size: 0.85rem
+          font-weight: 200
+          font-style: normal
+          line-height: 1
+  .news
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-between
+    height: 136px
+    color: $dark
+    background: $white
+    +v-sm
+      height: auto
+    a
+      color: $dark
+      text-decoration: none
+    .block-meta
+      margin: 15px 20px
+      +v-sm
+        margin-top: -11px
+        margin-bottom: 35px
+      .name
+        display: inline-block
+        float: left
+        font-size: .85rem
+        font-weight: 500
+        display: none
+        +v-xs
+          display: inline-block
+      .category        
+        display: inline-block
+        float: right
+        font-size: .85rem
+        font-weight: 200
+        +v-sm
+          display: inline-block
+          width: 25%
+          text-align: right
+.container
+  width: 90%
+  max-width: 1296px
+  margin: 0 auto
+  +v-sm
+    width: 100%
+    max-width: 728px
+.label  
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-right: 20px
+  width: 50px
+  height: 50px
+  &.label-white
+    background: $white
+  &.label-red
+    img
+      &.red-img
+        display: block
+        +v-sm
+          display: none 
+        +v-xs
+          display: block 
+      &.black-img
+        display: none
+        +v-sm
+          display: block 
+        +v-xs
+          display: none  
+    background: $red
+    +v-sm
+      background: $white
+    +v-xs
+      background: $red
+.title
+  font-size: 2.05rem
+  font-family: $title-font
+  font-weight: 700
+  font-style: italic
+  &.title-white
+    color: $white
+  &.title-dark
+    color: $dark
+    +v-sm
+      padding-left: 10px
+      padding-bottom: 10px
+    +v-xs
+      padding-left: 28px
+  &.title-red
+    color: $red
+    +v-sm
+      color: $white
+    +v-xs
+      color: $red
+.intro
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-end
+  height: auto
+  margin: 0 5%  
+.cat    
+  display: flex
+  flex-flow: row wrap
+  justify-content: flex-start
+  align-items: center
+  height: 50px
+  .cat-meta     
+    color: $white
+    font-size: .85rem
+    line-height: 1.25
+    text-transform: uppercase
+    &.white  
+      color: $white
+      font-weight: 400
+    &.dark 
+      color: $dark
+      font-weight: 500
+      +v-sm
+        color: $white
+      +v-xs
+        color: $dark
+section
+  display: block
+  width: 100%
+  height: auto
+  margin: 0
+  padding: 0
+  overflow: hidden
+#hero
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  align-items: flex-end
+  width: 100%
+  height: auto
+  padding-top: 40px
+  overflow: visible
+  background: $medium
+  +v-sm    
+    padding-top: 10px
+  +v-xs
+    position: relative
+    height: 315px
+    overflow: hidden
+  .intro
+    width: 30%
+    +v-xs
+      position: relative
+      z-index: 2      
+    .title
+      +v-xs
+        position: relative
+        bottom: 55px
+    .desc
+      +v-xs
+        display: none
+    .cat
+      +v-xs
+        display: none
+    +v-sm
+      order: 1
+      width: 100%
+  figure
+    width: 60%
+    line-height: 0
+    margin-bottom: -20px
+    +v-sm
+      order: 0
+      width: 100%
+      margin-bottom: 44px
+      box-shadow: 0 30px 30px rgba(0,0,0,.3)
+    +v-xs
+      position: absolute
+      top: 10px
+      width: 700px
+      left: -200px
+      display: block    
+      height: 300px
+      img
+        width: 100%
+        height: auto        
+    img
+      max-width: 100%
+#featured
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  height: 280px
+  margin: 60px 0
+  overflow: visible
+  +v-sm
+   flex-flow: column nowrap
+   background: $red
+   height: auto
+   margin-bottom: 0
+  +v-xs
+    background: transparent
+  .intro_featured
+    height: 280px
+    width: 18%
+    margin-top: 10px
+    margin-left: 5.5%
+    +v-md
+      width: 25%
+      margin-top: 0
+      margin-left: 60px
+      padding: 8px 0 0 0
+    +v-sm
+      width: 70%
+      height: auto
+      margin-top: 0
+      margin-left: 20px
+      padding: 40px 0 25px 20px
+    +v-xs     
+      margin-left: 0 
+  .featured_content
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    width: 72%    
+    margin-bottom: -20px
+    background: $red
+    +v-md
+      width: 68%
+    +v-sm
+      width: 100%
+      margin-bottom: 60px
+      background: transparent
+    +v-xs
+      position: relative
+      margin-bottom: -50px
+      &:before
+        position: absolute
+        left: 0
+        top: 0
+        display: block
+        content: ''
+        width: 65%
+        height: 107%
+        background: $red
+        z-index: 1
+    .block
+      margin-top: 3vh
+      margin-bottom: -20px
+      +v-xs
+        position: relative
+        z-index: 2
+    .block-wide
+      width: 56%
+      margin-left: 6%
+      margin-right: 1%
+      +v-sm
+        width: 44%
+        margin-left: 5%
+        margin-right: 1%  
+      +v-xs
+        width: 95% 
+        margin-left: auto
+        margin-right: 0
+        margin-bottom: 0                            
+      .news
+        .block-meta
+          +v-xs
+            margin: 30px 0 15px 15px
+          &.fetured_block
+            .category
+              +v-sm
+                margin-top: -6px
+              +v-xs
+                margin-top: 0
+                margin-right: 15px
+    .block-mini
+      width: 26%
+      margin-left: 2%
+      margin-right: 8%
+      +v-sm
+        width: 44%
+        margin-left: 1%
+        margin-right: 5%
+      +v-xs
+        width: 95%
+        margin-left: auto
+        margin-right: 0                              
+      .news
+        .block-meta
+          +v-xs
+            margin: 30px 0 15px 15px
+          .category
+            +v-xs
+              margin-top: 0
+              margin-right: 15px      
+#news_block
+  padding-top: 40px
+  .mob-navigation
+    display: none
+    justify-content: space-between
+    align-items: center
+    height: 50px
+    margin: -45px 0 20px
+    +v-xs
+      display: flex
+    button
+      display: inline-block      
+      width: 50px
+      height: 50px
+      padding: 0
+      border: none
+      outline: none
+    .dots      
+      span
+        display: inline-block
+        width: 8px
+        height: 8px
+        margin: 0 15px
+        background: $dark
+        &.active
+          background: $red
+  .news-content
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    margin-top: 30px
+    line-height: 0
+    margin-bottom: -20px
+    background: $white
+    +v-xs
+      display: block  
+      height: 350px
+      white-space: nowrap
+      overflow: hidden     
+    .block-wide
+      max-width: 100%      
+      +v-xs
+        display: inline-block
+        width: 300px
+        height: 300px
+        margin: 0 10px
+      .news
+        .block-title
+          +v-xs
+            margin-top: 45px
+            padding-left: 5px 
+          +v-xs          
+            a
+              font-size: 0.85rem
+              font-weight: 200
+              font-style: normal
+              line-height: 1
+        .block-meta
+          +v-xs
+            margin-top: 70px
+
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.99339795,14.5790701 C8.38763158,14.9733037 8.39336125,15.606753 8.0001143,16 C7.60959,16.3905243 6.98133424,16.3954335 6.58175596,15.9958552 L0.297152287,9.71125155 C-0.0956610989,9.31843817 -0.102425988,8.68832672 0.297152287,8.28874845 L6.58175596,2.00414477 C6.97456935,1.61133139 7.60686734,1.60675304 8.0001143,2 C8.39063859,2.39052429 8.3919773,3.02235056 7.99339795,3.42092991 L3.41432786,8 L16.9975741,8 C17.5512618,8 18.0001143,8.44386482 18.0001143,9 C18.0001143,9.55228475 17.5475965,10 16.9975741,10 L3.41432786,10 L7.99339795,14.5790701 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(0.000000, -364.000000)">
+            <g id="Group-2" transform="translate(0.000000, 364.000000)">
+                <g id="Group-17">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="50" height="50"></rect>
+                    <g id="Icons/Arrow-Left" transform="translate(16.000000, 15.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#262628" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="↳Tint/Backgroud" mask="url(#mask-2)" fill="#262628" fill-rule="evenodd">
+                            <rect id="Color" x="0" y="0" width="18" height="18"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

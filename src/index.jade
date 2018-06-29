@@ -1,12 +1,109 @@
 extends partials/layout
 
 block content
-  .grid
-    .col.text-center
-      h1 Home Page
-      img(src="img/base_image.png")
-  .grid
-    .col
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. LOLUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. LOLDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    .col
-      img(src="img/base_image.png")
+  section#hero
+    .intro
+      h2.title.title-white Innovation
+      p.desc.desc-white Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt a maiores, blanditiis animi error. Velit non architecto deserunt amet, expedita perspiciatis veritatis error consequatur. Molestias at saepe repellat, rem eveniet. Reprehenderit enim accusantium aliquid omnis non! Mollitia cum, accusantium nostrum?
+      .cat
+        .label.label-white
+          img(src="img/dotted_icon_black.svg", alt="Category")
+        .cat-meta.white
+          | Zurück zu allen
+          br
+          | Kategorien
+    figure
+      img(src="img/hero_img.jpg", alt="Hero image")
+  section#news_block
+    .container
+      h3.title.title-dark Artikel
+      .news-content
+        .block.block-wide
+          figure
+            a(href="")
+              img(src="img/blog.jpg", alt="News title")
+            a.sub-title(href="") Innovation
+          article.news
+            h4.block-title
+              a(href="") Lorem ipsum consectetur addolor sit amet.
+            p.block-meta
+              a.name(href="") Mehr erfahren 
+              a.category(href="") Lesezeit 3’
+        .block.block-wide
+          figure
+            a(href="")
+              img(src="img/blog.jpg", alt="News title")
+            a.sub-title(href="") Innovation
+          article.news
+            h4.block-title
+              a(href="") Lorem ipsum consectetur addolor sit amet.
+            p.block-meta
+              a.name(href="") Mehr erfahren
+              a.category(href="") Lesezeit 3’
+        .block.block-wide
+          figure
+            a(href="")
+              img(src="img/blog.jpg", alt="News title")
+            a.sub-title(href="") Innovation
+          article.news
+            h4.block-title
+              a(href="") Lorem ipsum consectetur addolor sit amet.
+            p.block-meta
+              a.name(href="") Mehr erfahren
+              a.category(href="") Lesezeit 3’
+        .block.block-wide
+          figure
+            a(href="")
+              img(src="img/blog.jpg", alt="News title")
+            a.sub-title(href="") Innovation
+          article.news
+            h4.block-title
+              a(href="") Lorem ipsum consectetur addolor sit amet.
+            p.block-meta
+              a.name(href="") Mehr erfahren
+              a.category(href="") Lesezeit 3’
+      .mob-navigation
+        button
+          img(src="img/row-left.svg", alt="prev")
+        .dots
+          span.active
+          span
+          span
+          span
+        button
+          img(src="img/row-right.svg", alt="next")
+  section#featured
+    .intro_featured
+      h3.title.title-red #Digitalisierung
+      p.desc.desc-dark Hier finden Sie lorem ipsum dolor sit amet, consequituur atque quibus et ceterandi fuitans  ipsum dolor sit amet, consequituur atque quibus et ceterandi fuitans.
+      .cat
+        .label.label-red
+          img.red-img(src="img/dotted_icon_white.svg", alt="Category")
+          img.black-img(src="img/dotted_icon_black.svg", alt="Category")
+        .cat-meta.dark
+          | Zurück zu allen
+          br
+          | Kategorien
+    .featured_content
+      .block.block-wide
+        figure
+          a(href="")
+            img(src="img/blog.jpg", alt="News title")
+          a.sub-title(href="") Innovation
+        article.news
+          h4.block-title
+            a(href="") Lorem ipsum consectetur addolor sit amet.
+          p.block-meta.fetured_block
+            a.name(href="") Mehr erfahren
+            a.category(href="") Lesezeit 3’      
+      .block.block-mini
+        figure
+          a(href="")
+            img(src="img/blog.jpg", alt="News title")
+          a.sub-title(href="") Innovation
+        article.news
+          h4.block-title
+            a(href="") Lorem ipsum consectetur addolor sit amet, consectetur ipsum dolor sit amet.
+          p.block-meta
+            a.name(href="") Mehr erfahren
+            a.category(href="") Lesezeit 3’
